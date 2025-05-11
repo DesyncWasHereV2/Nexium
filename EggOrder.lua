@@ -17,8 +17,5 @@ return {
     ["Underworld Egg"] = 16,
     ["200M Egg"] = 17,
     ["Infinity Egg"] = 18,
-    ["Infinity Egg2"] = 19,
-    ["Infinity Egg3"] = 20,
-    ["Infinity Egg4"] = 21,
-    ["Infinity Egg5"] = 22
+    ["Infinity Egg6"] = 19
 }
