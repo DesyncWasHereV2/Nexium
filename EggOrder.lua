@@ -1,7 +1,7 @@
 return {
     ["Common Egg"] = 1,
     ["Spotted Egg"] = 2,
-    ["IceShard Egg"] = 3,
+    ["Iceshard Egg"] = 3,
     ["Spikey Egg"] = 4,
     ["Magma Egg"] = 5,
     ["Crystal Egg"] = 6,
