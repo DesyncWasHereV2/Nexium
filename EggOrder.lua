@@ -16,5 +16,6 @@ return {
     ["Game Egg"] = 15,
     ["Underworld Egg"] = 16,
     ["200M Egg"] = 17,
-    ["Infinity Egg"] = 18
+    ["Infinity Egg"] = 18,
+    ["Infinity Egg2"] = 19
 }
