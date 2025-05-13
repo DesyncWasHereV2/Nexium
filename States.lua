@@ -115,6 +115,7 @@ return {
         Running = false,
         CanProceed = true,
         Multiple = 1,
+        NewKey = 1,
         ActiveCount = 0,
         Meta = {ID = "Info_01", Parent = "Info"}
     }
