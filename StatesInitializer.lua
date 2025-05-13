@@ -1,3 +1,5 @@
+local HttpService = game:GetService("HttpService")
+
 return function(states)
     local defaultStates = loadstring(game:HttpGet("https://raw.githubusercontent.com/DesyncWasHereV2/Nexium/main/States.lua"))()
     local patched = false
