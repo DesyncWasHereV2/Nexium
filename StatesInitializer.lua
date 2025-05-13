@@ -1,5 +1,4 @@
 return function(states)
-    local HttpService = game:GetService("HttpService")
     local defaultStates = loadstring(game:HttpGet("https://raw.githubusercontent.com/DesyncWasHereV2/Nexium/main/States.lua"))()
     local patched = false
 
@@ -22,18 +21,5 @@ return function(states)
     end
 
     print("[StatesInitializer] Patch process completed.")
-    print("[StatesInitializer] Final States Table Structure:")
-
-    for k, v in pairs(states) do
-        print("  [", k, "]")
-        for subK, subV in pairs(v) do
-            if type(subV) == "table" then
-                print("    ", subK, "=", HttpService:JSONEncode(subV))
-            else
-                print("    ", subK, "=", tostring(subV))
-            end
-        end
-    end
-
     return patched
 end
