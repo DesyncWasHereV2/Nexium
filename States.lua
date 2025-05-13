@@ -119,5 +119,14 @@ return {
         NewKey1 = 2,
         ActiveCount = 0,
         Meta = {ID = "Info_01", Parent = "Info"}
+    },
+    Info234 = {
+        Running = false,
+        CanProceed = true,
+        Multiple = 1,
+        NewKey = 1,
+        NewKey1 = 2,
+        ActiveCount = 0,
+        Meta = {ID = "Info_01", Parent = "Info"}
     }
 }
