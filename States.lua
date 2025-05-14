@@ -110,15 +110,5 @@ return {
         },
         URL = "",
         Meta = {ID = "PetWebhook_01", Parent = "PetWebhook"}
-    },
-    Info = {
-        Running = false,
-        CanProceed = true,
-        Multiple = 1,
-        NewKey = 1,
-        NewKey1 = 2,
-        NewKey44 = 33,
-        ActiveCount = 0,
-        Meta = {ID = "Info_01", Parent = "Info"}
     }
 }
