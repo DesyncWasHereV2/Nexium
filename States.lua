@@ -110,5 +110,16 @@ return {
         },
         URL = "",
         Meta = {ID = "PetWebhook_01", Parent = "PetWebhook"}
+    },
+    Info = {
+        CanProceed = true,
+        NewKey = 1,
+        Multiple = 1,
+        ActiveCount = 0,
+        Meta = {
+            ID = "Info_01",
+            Parent = "Info"
+        },
+        Running = false
     }
 }
