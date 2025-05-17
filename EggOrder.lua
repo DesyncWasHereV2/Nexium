@@ -19,11 +19,18 @@ local EggsOrder = {
     ["Infinity Egg"] = 18
 }
 
-local sorted_eggs_order = {}
-for name in pairs(EggsOrder) do
-    table.insert(sorted_eggs_order, name)
+local sorted_eggs = {}
+for name, order in pairs(EggsOrder) do
+    table.insert(sorted_eggs, {name = name, order = order})
 end
 
-table.sort(sorted_eggs_order, function(a, b) return EggsOrder[a] < EggsOrder[b] end)
+table.sort(sorted_eggs, function(a, b)
+    return a.order < b.order
+end)
 
-return sorted_eggs_order, EggsOrder
+local sorted_eggs_Order = {}
+for _, egg in ipairs(sorted_eggs) do
+    table.insert(sorted_eggs_Order, egg.name)
+end
+
+return sorted_eggs_Order, EggsOrder
