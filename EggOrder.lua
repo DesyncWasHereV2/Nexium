@@ -20,17 +20,8 @@ local EggsOrder = {
 }
 
 local sorted_eggs = {}
-for name, order in pairs(EggsOrder) do
-    table.insert(sorted_eggs, {name = name, order = order})
+for name in pairs(EggsOrder) do
+    table.insert(sorted_eggs, name)
 end
-
-table.sort(sorted_eggs, function(a, b)
-    return a.order < b.order
-end)
-
-local sorted_eggs_Order = {}
-for _, egg in ipairs(sorted_eggs) do
-    table.insert(sorted_eggs_Order, egg.name)
-end
-
-return sorted_eggs_Order, EggsOrder
+    
+table.sort(sorted_eggs, function(a, b) return EggsOrder[a] < EggsOrder[b] end)
