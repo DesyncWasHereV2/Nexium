@@ -1,4 +1,4 @@
-local Potions = {
+local PotionsOrder = {
     ["Lucky Evolved"] = { Order = 1, UseId = 6 },
     ["Speed Evolved"] = { Order = 2, UseId = 6 },
     ["Coins Evolved"] = { Order = 3, UseId = 6 },
@@ -11,18 +11,18 @@ local Potions = {
     ["Tickets V"] = { Order = 10, UseId = 5 }
 }
 
-local SortedPotions = {}
-for name, data in pairs(Potions) do
-    table.insert(SortedPotions, { Name = name, Data = data })
+local sorted_potions = {}
+for name, data in pairs(PotionsOrder) do
+    table.insert(sorted_potions, {name = name, order = data.Order, UseId = data.UseId})
 end
 
-table.sort(SortedPotions, function(a, b)
-    return a.Data.Order < b.Data.Order
+table.sort(sorted_potions, function(a, b)
+    return a.order < b.order
 end)
 
-local NewPotionsTable = {}
-for _, entry in ipairs(SortedPotions) do
-    NewPotionsTable[entry.Name] = entry.Data
+local sorted_potions_order = {}
+for name, potion in pairs(sorted_potions) do
+    table.insert(sorted_potions_order, name)
 end
 
-return NewPotionsTable
+return sorted_potions_order
