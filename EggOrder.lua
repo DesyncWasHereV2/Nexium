@@ -25,3 +25,4 @@ for name in pairs(EggsOrder) do
 end
     
 table.sort(sorted_eggs, function(a, b) return EggsOrder[a] < EggsOrder[b] end)
+return sorted_eggs, EggsOrder
