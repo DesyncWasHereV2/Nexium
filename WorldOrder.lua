@@ -1,4 +1,4 @@
-return {
+local WorldOrder = {
     ["World 1"] = {
         Path = "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.WorldMap.Worlds['The Overworld']['World']",
         Order = 1
@@ -48,3 +48,19 @@ return {
         Order = 12
     }
 }
+
+local sorted_worlds = {}
+for name, data in pairs(WorldOrder) do
+    table.insert(sorted_worlds, {name = name, order = data.Order, Path = data.Path})
+end
+
+table.sort(sorted_worlds, function(a, b)
+    return a.order < b.order
+end)
+
+local sorted_world_Order = {}
+for _, world in pairs(sorted_worlds) do
+    table.insert(sorted_world_Order, world.name)
+end
+
+return sorted_world_Order, WorldOrder
