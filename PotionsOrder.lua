@@ -21,8 +21,8 @@ table.sort(sorted_potions, function(a, b)
 end)
 
 local sorted_potions_order = {}
-for name, potion in pairs(sorted_potions) do
-    table.insert(sorted_potions_order, name)
+for _, potion in ipairs(sorted_potions) do
+    table.insert(sorted_potions_order, potion.name)
 end
 
 return sorted_potions_order
