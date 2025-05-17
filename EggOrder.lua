@@ -1,4 +1,4 @@
-return {
+local EggsOrder = {
     ["Common Egg"] = 1,
     ["Spotted Egg"] = 2,
     ["Iceshard Egg"] = 3,
@@ -18,3 +18,12 @@ return {
     ["200M Egg"] = 17,
     ["Infinity Egg"] = 18
 }
+
+local sorted_eggs_order = {}
+for name in pairs(EggsOrder) do
+    table.insert(sorted_eggs_order, name)
+end
+
+table.sort(sorted_eggs_order, function(a, b) return EggsOrder[a] < EggsOrder[b] end)
+
+return sorted_eggs_order, EggsOrder
