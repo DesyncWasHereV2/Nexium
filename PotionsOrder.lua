@@ -25,4 +25,4 @@ for _, potion in ipairs(sorted_potions) do
     table.insert(sorted_potions_order, potion.name)
 end
 
-return sorted_potions_order
+return sorted_potions_order, PotionsOrder
