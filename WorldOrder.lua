@@ -46,6 +46,10 @@ local WorldOrder = {
     ["Robot Factory"] = {
         Path = "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.WorldMap.Worlds['Minigame Paradise'].Islands['Robot Factory']",
         Order = 12
+    },
+    ["Hyperwave Island"] = {
+        Path = "game:GetService('Players').LocalPlayer.PlayerGui.ScreenGui.WorldMap.Worlds['Minigame Paradise'].Islands['Hyperwave Island']",
+        Order = 13
     }
 }
 
