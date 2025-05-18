@@ -13,6 +13,7 @@ return {
     ["Showman Egg"] = "Workspace.Worlds.Minigame Paradise.FastTravel.Spawn",
     ["Mining Egg"] = "Workspace.Worlds.Minigame Paradise.Islands.Minecart Forest.Island.Portal.Spawn",
     ["Cyber Egg"] = "Workspace.Worlds.Minigame Paradise.Islands.Robot Factory.Island.Portal.Spawn",
-    ["200M Egg"] = "Workspace.Worlds.The Overworld.FastTravel.Spawn",
+    ["Neon Egg"] = "Workspace.Worlds.Minigame Paradise.Islands.Hyperwave Island.Island.Portal.Spawn",
+    --["Chance Egg"] = "Workspace.Worlds.Minigame Paradise.Islands.Robot Factory.Island.Portal.Spawn",
     ["Infinity Egg"] = "Workspace.Worlds.The Overworld.FastTravel.Spawn"
 }
