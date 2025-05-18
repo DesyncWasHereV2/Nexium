@@ -15,7 +15,7 @@ local EggsOrder = {
     ["Cyber Egg"] = 14,
     ["Game Egg"] = 15,
     ["Underworld Egg"] = 16,
-    ["200M Egg"] = 17,
+    ["Neon Egg"] = 17,
     ["Infinity Egg"] = 18
 }
 
