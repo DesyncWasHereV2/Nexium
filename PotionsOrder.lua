@@ -1,14 +1,14 @@
 local PotionsOrder = {
-    ["Lucky Evolved"] = { Order = 1, UseId = 6 },
-    ["Speed Evolved"] = { Order = 2, UseId = 6 },
-    ["Coins Evolved"] = { Order = 3, UseId = 6 },
-    ["Mythic Evolved"] = { Order = 4, UseId = 6 },
-    ["Tickets Evolved"] = { Order = 5, UseId = 6 },
-    ["Lucky V"] = { Order = 6, UseId = 5 },
-    ["Speed V"] = { Order = 7, UseId = 5 },
-    ["Coins V"] = { Order = 8, UseId = 5 },
-    ["Mythic V"] = { Order = 9, UseId = 5 },
-    ["Tickets V"] = { Order = 10, UseId = 5 }
+    ["Lucky Evolved"] = { Order = 1, UseId = 6, OrderId = "Lucky"},
+    ["Speed Evolved"] = { Order = 2, UseId = 6, OrderId = "Speed"},
+    ["Coins Evolved"] = { Order = 3, UseId = 6, OrderId = "Coins"},
+    ["Mythic Evolved"] = { Order = 4, UseId = 6, OrderId = "Mythic"},
+    ["Tickets Evolved"] = { Order = 5, UseId = 6, OrderId = "Tickets"},
+    ["Lucky V"] = { Order = 6, UseId = 5, OrderId = "Lucky"},
+    ["Speed V"] = { Order = 7, UseId = 5, OrderId = "Speed"},
+    ["Coins V"] = { Order = 8, UseId = 5, OrderId = "Coins"},
+    ["Mythic V"] = { Order = 9, UseId = 5, OrderId = "Mythic"},
+    ["Tickets V"] = { Order = 10, UseId = 5, OrderId = "Tickets"}
 }
 
 local sorted_potions = {}
